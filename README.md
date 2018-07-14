@@ -1,2 +1,0 @@
-# Nano
-Created with CodeSandbox
