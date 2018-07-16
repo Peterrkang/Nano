@@ -59,7 +59,7 @@ body {
   border-radius: 4px;
   text-align: center;
   justify-content: space-between;
-  flex-basis: 250px;
+  flex-basis: 150px;
   display: flex;
   flex-wrap: wrap;
 }

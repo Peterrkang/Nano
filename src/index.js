@@ -9,7 +9,7 @@ class App extends Component {
   state = { vendors: [], listView: false };
 
   componentWillMount() {
-    this.setState({ vendors: testAPI.vendors });
+    this.setState({ vendors: testAPI });
   }
 
   handleViewSwitch = () => {

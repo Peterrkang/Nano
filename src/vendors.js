@@ -1,17 +1,21 @@
 import React from "react";
 
 function Vendors({ list, listView }) {
-  console.log(list);
   return listView ? (
     <ul className="list-features">
+      <li key="0">
+        <div>Name</div>
+        <div>Product</div>
+        <div>Location</div>
+        <div>Website</div>
+      </li>
       {list.map(vendor => {
         return (
           <li key={vendor.id}>
             <div>{vendor.name}</div>
             <div>{vendor.product}</div>
             <div>{vendor.location}</div>
-            <div>{vendor.createdDate}</div>
-            <a href="#">{vendor.url}</a>
+            <a href={vendor.url}>Visit Vendor</a>
           </li>
         );
       })}
@@ -25,9 +29,8 @@ function Vendors({ list, listView }) {
             <ul className="features">
               <li>{vendor.product}</li>
               <li>{vendor.location}</li>
-              <li>{vendor.createdDate}</li>
             </ul>
-            <a href="#">{vendor.url}</a>
+            <a href={vendor.url}>Visit Vendor</a>
           </div>
         );
       })}
