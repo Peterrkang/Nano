@@ -52,7 +52,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.merchant {
+.vendor {
   background: rgba(255, 255, 255, 0.2);
   margin: 20px;
   padding: 20px;
@@ -64,26 +64,26 @@ body {
   flex-wrap: wrap;
 }
 
-.merchant > * {
+.vendor > * {
   flex: 1 1 100%;
 }
 
-.merchant ul {
+.vendor ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.merchant ul li {
+.vendor ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
-.merchant ul li:last-child {
+.vendor ul li:last-child {
   border-bottom: 0;
 }
 
-.merchant a {
+.vendor a {
   width: 100%;
   text-decoration: none;
   background: #feff00;
@@ -92,7 +92,7 @@ body {
   border-radius: 4px;
 }
 
-.merchant h2 {
+.vendor h2 {
   color: white;
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);

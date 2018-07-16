@@ -15,7 +15,7 @@ class NavBar extends Component {
       <nav className="flex-nav">
         <ul>
           <li>
-            <a href="#">Support Nano</a>
+            <a href="#">Nano Vendors</a>
           </li>
           <li className="social">
             <a href="http://github.com/peterrkang/Nano">

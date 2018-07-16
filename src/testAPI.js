@@ -1,5 +1,5 @@
 const testAPI = {
-  merchants: [
+  vendors: [
     {
       id: 1,
       name: "test1",

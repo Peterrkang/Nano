@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Merchants from "./merchants.js";
 import NavBar from "./navBar.js";
 import testAPI from "./testAPI.js";
+import Vendors from "./vendors.js";
 import "./styles.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { merchants: [], listView: false };
-  }
+  state = { vendors: [], listView: false };
 
   componentWillMount() {
-    this.setState({ merchants: testAPI.merchants });
+    this.setState({ vendors: testAPI.vendors });
   }
 
   handleViewSwitch = () => {
@@ -24,12 +21,12 @@ class App extends Component {
   };
 
   render() {
-    const { merchants, listView } = this.state;
+    const { vendors, listView } = this.state;
     return (
       <div className="App">
         <div className="wrapper">
           <NavBar handleViewSwitch={this.handleViewSwitch} />
-          <Merchants list={merchants} listView={listView} />
+          <Vendors list={vendors} listView={listView} />
         </div>
       </div>
     );
