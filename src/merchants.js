@@ -1,7 +1,7 @@
 import React from "react";
 
-function Merchants({ list, viewType }) {
-  return viewType ? (
+function Merchants({ list, listView }) {
+  return listView ? (
     <ul className="list-features">
       {list.map(merchant => {
         return (

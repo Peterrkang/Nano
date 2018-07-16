@@ -30,6 +30,11 @@ body {
   flex: 7;
 }
 
+.flex-nav .social {
+  flex: 1;
+  align-self: center;
+}
+
 .flex-nav a {
   color: white;
   font-weight: 100;
@@ -45,10 +50,6 @@ body {
 
 .flex-nav a:hover {
   background: rgba(0, 0, 0, 0.3);
-}
-
-.flex-nav .social {
-  flex: 1;
 }
 
 .merchant {

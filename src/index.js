@@ -25,15 +25,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="wrapper">
-          <NavBar />
-          <a href="#" onClick={this.handleViewSwitch}>
-            {this.state.listView ? (
-              <i className="glyphicon glyphicon-th-list" />
-            ) : (
-              <i className="glyphicon glyphicon-th" />
-            )}
-          </a>
-          <Merchants list={merchants} viewType={listView} />
+          <NavBar handleViewSwitch={this.handleViewSwitch} />
+          <Merchants list={merchants} listView={listView} />
         </div>
       </div>
     );
