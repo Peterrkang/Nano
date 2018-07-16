@@ -1,9 +1,39 @@
-import { Component } from "react";
+import React from "react";
 
-class Merchants extends Component {
-  render() {
-    return null;
-  }
+function Merchants({ list, viewType }) {
+  return viewType ? (
+    <div className="flex-content">
+      <ul className="list-features">
+        {list.map(merchant => {
+          return (
+            <li key={merchant.id}>
+              <div>{merchant.name}</div>
+              <div>{merchant.product}</div>
+              <div>{merchant.location}</div>
+              <div>{merchant.createdDate}</div>
+              <a href="#">{merchant.url}</a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  ) : (
+    <div className="flex-content">
+      {list.map(merchant => {
+        return (
+          <div key={merchant.id} className="merchant">
+            <h2>{merchant.name}</h2>
+            <ul className="features">
+              <li>{merchant.product}</li>
+              <li>{merchant.location}</li>
+              <li>{merchant.createdDate}</li>
+            </ul>
+            <a href="#">{merchant.url}</a>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Merchants;

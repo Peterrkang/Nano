@@ -1,18 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import NavBar from "./navBar.js";
 import Merchants from "./merchants.js";
-import Contact from "./contact.js";
+import NavBar from "./navBar.js";
+import testAPI from "./testAPI.js";
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Merchants />
-      <Contact />
-    </div>
-  );
+class App extends Component {
+  state = { merchants: [], listView: false };
+
+  componentWillMount() {
+    this.setState({ merchants: testAPI.merchants });
+  }
+
+  handleViewSwitch = () => {
+    this.setState(currentState => {
+      return {
+        listView: !currentState.listView
+      };
+    });
+  };
+
+  render() {
+    const { merchants, listView } = this.state;
+    return (
+      <div className="App">
+        <div className="wrapper">
+          <NavBar />
+          <a href="#" onClick={this.handleViewSwitch}>
+            {this.state.listView ? (
+              <i className="glyphicon glyphicon-th-list" />
+            ) : (
+              <i className="glyphicon glyphicon-th" />
+            )}
+          </a>
+          <Merchants list={merchants} viewType={listView} />
+        </div>
+      </div>
+    );
+  }
 }
 
 const rootElement = document.getElementById("root");
