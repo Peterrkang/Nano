@@ -1,8 +1,8 @@
 body {
-  background-image: url(https://uploads.codesandbox.io/uploads/user/99d5074a-0716-436c-a67f-33cdd0d16f02/e7kg-Nano.png),
+  background-image: url(https://uploads.codesandbox.io/uploads/user/99d5074a-0716-436c-a67f-33cdd0d16f02/mJGk-Nano.png),
     linear-gradient(260deg, #60676b 0%, #0f7abc 100%);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   font-family: sans-serif;
   background-attachment: fixed;
 }
@@ -120,7 +120,6 @@ body {
   display: flex;
   align-items: center;
   height: 50px;
-  border: solid red 1px;
 }
 
 .list-features li:hover {

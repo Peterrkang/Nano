@@ -6,7 +6,10 @@ import testAPI from "./testAPI.js";
 import "./styles.css";
 
 class App extends Component {
-  state = { merchants: [], listView: false };
+  constructor(props) {
+    super(props);
+    this.state = { merchants: [], listView: false };
+  }
 
   componentWillMount() {
     this.setState({ merchants: testAPI.merchants });
