@@ -1,28 +1,14 @@
 body {
-  background-image: linear-gradient(260deg, #60676b 0%, #0f7abc 100%);
+  background-image: url(https://uploads.codesandbox.io/uploads/user/99d5074a-0716-436c-a67f-33cdd0d16f02/e7kg-Nano.png),
+    linear-gradient(260deg, #60676b 0%, #0f7abc 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
   font-family: sans-serif;
+  background-attachment: fixed;
 }
 
 .App {
   font-family: sans-serif;
-  text-align: center;
-}
-
-.flex-nav a {
-  color: white;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, -1);
-  padding: 20px 0px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-.flex-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {
@@ -44,8 +30,41 @@ body {
   flex: 7;
 }
 
+.flex-nav a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, -1);
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.flex-nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .flex-nav .social {
   flex: 1;
+}
+
+.merchant {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  justify-content: space-between;
+  flex-basis: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.merchant > * {
+  flex: 1 1 100%;
 }
 
 .merchant ul {
@@ -73,55 +92,42 @@ body {
 }
 
 .merchant h2 {
-  text-transform: uppercase;
   color: white;
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .flex-content {
+  display: flex;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.merchant {
-  background: rgba(255, 255, 255, 0.2);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-  justify-content: space-between;
-  flex-basis: 250px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.merchant > * {
-  flex: 1 1 100%;
-}
-
 .list-features {
+  display: flex;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-  text-align: center;
-  display: flex;
   flex-direction: column;
   width: 100%;
   list-style: none;
 }
 
 .list-features li {
+  margin-left: -40px;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
   align-items: center;
   height: 50px;
+  border: solid red 1px;
 }
 
 .list-features li:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.list-features li > * {
+  flex: 1;
+  text-align: center;
 }

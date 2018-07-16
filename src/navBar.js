@@ -18,7 +18,7 @@ class NavBar extends Component {
             <a href="#">Support Nano</a>
           </li>
           <li className="social">
-            <a href="http://github.com/peterrkang">
+            <a href="http://github.com/peterrkang/Nano">
               <i className="fa fa-github" />
             </a>
           </li>
