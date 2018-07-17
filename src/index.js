@@ -6,10 +6,10 @@ import Vendors from "./vendors.js";
 import "./styles.css";
 
 class App extends Component {
-  state = { vendors: [], listView: false };
+  state = { vendors: [], searchResult: [], listView: false };
 
   componentWillMount() {
-    this.setState({ vendors: testAPI });
+    this.setState({ vendors: testAPI, searchResult: testAPI });
   }
 
   handleViewSwitch = () => {
@@ -18,6 +18,23 @@ class App extends Component {
         listView: !currentState.listView
       };
     });
+  };
+
+  handleInputChange = e => {
+    const value = e.target.value;
+    if (value) {
+      this.setState(({ vendors }) => {
+        return {
+          searchResult: vendors.filter(vendor => {
+            return Object.values(vendor.name).includes(value);
+          })
+        };
+      });
+    } else {
+      this.setState(({ vendors }) => {
+        return { searchResult: vendors };
+      });
+    }
   };
 
   renderFooter = () => (
@@ -36,12 +53,15 @@ class App extends Component {
   );
 
   render() {
-    const { vendors, listView } = this.state;
+    const { searchResult, listView } = this.state;
     return (
       <div className="App">
         <div className="wrapper">
-          <NavBar handleViewSwitch={this.handleViewSwitch} />
-          <Vendors list={vendors} listView={listView} />
+          <NavBar
+            handleViewSwitch={this.handleViewSwitch}
+            handleInputChange={this.handleInputChange}
+          />
+          <Vendors list={searchResult} listView={listView} />
           {this.renderFooter()}
         </div>
       </div>

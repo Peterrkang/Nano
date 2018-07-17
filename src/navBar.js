@@ -17,6 +17,9 @@ class NavBar extends Component {
           <li>
             <a href="#">Nano Vendors</a>
           </li>
+          <li>
+            <input />
+          </li>
           <li className="social">
             <a href="#" onClick={this.renderIcon}>
               {this.state.currentView ? (
