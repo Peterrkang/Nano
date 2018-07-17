@@ -3,12 +3,12 @@ import React from "react";
 function Vendors({ list, listView }) {
   return listView ? (
     <ul className="list-features">
-      <li key="0">
+      <div>
         <div>Name</div>
         <div>Product</div>
         <div>Location</div>
         <div>Website</div>
-      </li>
+      </div>
       {list.map(vendor => {
         return (
           <li key={vendor.id}>

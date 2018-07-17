@@ -20,6 +20,21 @@ class App extends Component {
     });
   };
 
+  renderFooter = () => (
+    <ul>
+      <li className="social">
+        <a href="http://github.com/peterrkang/Nano">
+          <i className="fa fa-github" />
+        </a>
+      </li>
+      <li className="social">
+        <a href="http://linkedin.com/in/peterrkang">
+          <i className="fa fa-linkedin" />
+        </a>
+      </li>
+    </ul>
+  );
+
   render() {
     const { vendors, listView } = this.state;
     return (
@@ -27,6 +42,7 @@ class App extends Component {
         <div className="wrapper">
           <NavBar handleViewSwitch={this.handleViewSwitch} />
           <Vendors list={vendors} listView={listView} />
+          {this.renderFooter()}
         </div>
       </div>
     );

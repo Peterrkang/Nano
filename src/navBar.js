@@ -18,16 +18,6 @@ class NavBar extends Component {
             <a href="#">Nano Vendors</a>
           </li>
           <li className="social">
-            <a href="http://github.com/peterrkang/Nano">
-              <i className="fa fa-github" />
-            </a>
-          </li>
-          <li className="social">
-            <a href="http://linkedin.com/in/peterrkang">
-              <i className="fa fa-linkedin" />
-            </a>
-          </li>
-          <li className="social">
             <a href="#" onClick={this.renderIcon}>
               {this.state.currentView ? (
                 <i className="fa fa-th-list" />
