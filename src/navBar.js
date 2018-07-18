@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class NavBar extends Component {
-  state = { currentView: false };
+  state = { currentView: false, inputValue: "" };
 
   renderIcon = () => {
     this.props.handleViewSwitch();
@@ -10,6 +10,13 @@ class NavBar extends Component {
     });
   };
 
+  handleInputChange(e) {
+    e.preventDefault();
+    const inputValue = e.target.value.toLowerCase();
+    this.props.handleInputSearch(inputValue);
+    this.setState({ inputValue });
+  }
+
   render() {
     return (
       <nav className="flex-nav">
@@ -17,8 +24,11 @@ class NavBar extends Component {
           <li>
             <a href="#">Nano Vendors</a>
           </li>
-          <li>
-            <input />
+          <li className="social">
+            <input
+              onChange={e => this.handleInputChange(e)}
+              value={this.state.inputValue}
+            />
           </li>
           <li className="social">
             <a href="#" onClick={this.renderIcon}>

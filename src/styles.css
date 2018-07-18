@@ -52,6 +52,33 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.flex-footer {
+  display: flex;
+  list-style: none;
+}
+
+.flex-footer .social {
+  flex: 1;
+  align-self: center;
+}
+
+.flex-footer a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, -1);
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.flex-footer a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .vendor {
   background: rgba(255, 255, 255, 0.2);
   margin: 20px;

@@ -20,13 +20,16 @@ class App extends Component {
     });
   };
 
-  handleInputChange = e => {
-    const value = e.target.value;
+  handleInputSearch = value => {
     if (value) {
       this.setState(({ vendors }) => {
         return {
           searchResult: vendors.filter(vendor => {
-            return Object.values(vendor.name).includes(value);
+            return (
+              vendor.location.toLowerCase().includes(value) ||
+              vendor.name.toLowerCase().includes(value) ||
+              vendor.product.toLowerCase().includes(value)
+            );
           })
         };
       });
@@ -38,7 +41,10 @@ class App extends Component {
   };
 
   renderFooter = () => (
-    <ul>
+    <ul className="flex-footer">
+      <li>
+        <a />
+      </li>
       <li className="social">
         <a href="http://github.com/peterrkang/Nano">
           <i className="fa fa-github" />
@@ -59,7 +65,7 @@ class App extends Component {
         <div className="wrapper">
           <NavBar
             handleViewSwitch={this.handleViewSwitch}
-            handleInputChange={this.handleInputChange}
+            handleInputSearch={this.handleInputSearch}
           />
           <Vendors list={searchResult} listView={listView} />
           {this.renderFooter()}
