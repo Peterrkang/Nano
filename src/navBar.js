@@ -24,10 +24,11 @@ class NavBar extends Component {
           <li>
             <a href="#">Nano Vendors</a>
           </li>
-          <li className="social">
+          <li>
             <input
               onChange={e => this.handleInputChange(e)}
               value={this.state.inputValue}
+              placeholder="Search Vendors"
             />
           </li>
           <li className="social">

@@ -27,7 +27,13 @@ body {
 
 .flex-nav li {
   display: flex;
-  flex: 7;
+  flex: 4;
+}
+
+.flex-nav input {
+  border-radius: 3px;
+  flex: 2;
+  margin: 15px 10px;
 }
 
 .flex-nav .social {
@@ -55,6 +61,15 @@ body {
 .flex-footer {
   display: flex;
   list-style: none;
+}
+
+.flex-footer li {
+  display: flex;
+}
+
+.address:active {
+  -webkit-transition: 1s;
+  background: rgba(61, 54, 54, 0.1);
 }
 
 .flex-footer .social {
@@ -86,7 +101,7 @@ body {
   border-radius: 4px;
   text-align: center;
   justify-content: space-between;
-  flex-basis: 150px;
+  flex-basis: 100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -147,6 +162,10 @@ body {
   display: flex;
   align-items: center;
   height: 50px;
+}
+
+.vendor-props {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .list-features li:hover {

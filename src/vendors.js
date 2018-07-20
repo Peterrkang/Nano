@@ -1,21 +1,21 @@
 import React from "react";
 
-function Vendors({ list, listView }) {
+const Vendors = ({ list, listView }) => {
   return listView ? (
     <ul className="list-features">
-      <div>
+      <li className="vendor-props">
         <div>Name</div>
         <div>Product</div>
         <div>Location</div>
         <div>Website</div>
-      </div>
+      </li>
       {list.map(vendor => {
         return (
           <li key={vendor.id}>
             <div>{vendor.name}</div>
             <div>{vendor.product}</div>
             <div>{vendor.location}</div>
-            <a href={vendor.url}>Visit Vendor</a>
+            <a href={vendor.url}>Visit {vendor.name}</a>
           </li>
         );
       })}
@@ -30,12 +30,12 @@ function Vendors({ list, listView }) {
               <li>{vendor.product}</li>
               <li>{vendor.location}</li>
             </ul>
-            <a href={vendor.url}>Visit Vendor</a>
+            <a href={vendor.url}>Visit {vendor.name}</a>
           </div>
         );
       })}
     </div>
   );
-}
+};
 
 export default Vendors;

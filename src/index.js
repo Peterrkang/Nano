@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import NavBar from "./navBar.js";
-import testAPI from "./testAPI.js";
-import Vendors from "./vendors.js";
+import NavBar from "./navBar";
+import testAPI from "./testAPI";
+import Vendors from "./vendors";
+import SocialBar from "./socialBar";
 import "./styles.css";
 
 class App extends Component {
@@ -40,24 +41,6 @@ class App extends Component {
     }
   };
 
-  renderFooter = () => (
-    <ul className="flex-footer">
-      <li>
-        <a />
-      </li>
-      <li className="social">
-        <a href="http://github.com/peterrkang/Nano">
-          <i className="fa fa-github" />
-        </a>
-      </li>
-      <li className="social">
-        <a href="http://linkedin.com/in/peterrkang">
-          <i className="fa fa-linkedin" />
-        </a>
-      </li>
-    </ul>
-  );
-
   render() {
     const { searchResult, listView } = this.state;
     return (
@@ -68,7 +51,7 @@ class App extends Component {
             handleInputSearch={this.handleInputSearch}
           />
           <Vendors list={searchResult} listView={listView} />
-          {this.renderFooter()}
+          <SocialBar />
         </div>
       </div>
     );
