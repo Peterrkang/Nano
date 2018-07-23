@@ -1,9 +1,11 @@
 import React from "react";
+import styles from "./styles.module.css";
+
 
 const Vendors = ({ list, listView }) => {
   return listView ? (
-    <ul className="list-features">
-      <li className="vendor-props">
+    <ul className={styles["list-features"]}>
+      <li className={styles["vendor-props"]}>
         <div>Name</div>
         <div>Product</div>
         <div>Location</div>
@@ -21,12 +23,12 @@ const Vendors = ({ list, listView }) => {
       })}
     </ul>
   ) : (
-    <div className="flex-content">
+    <div className={styles["flex-content"]}>
       {list.map(vendor => {
         return (
-          <div key={vendor.id} className="vendor">
+          <div key={vendor.id} className={styles["vendor"]}>
             <h2>{vendor.name.toUpperCase()}</h2>
-            <ul className="features">
+            <ul className={styles["features"]}>
               <li>{vendor.product}</li>
               <li>{vendor.location}</li>
             </ul>

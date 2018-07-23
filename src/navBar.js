@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./styles.module.css";
 
 class NavBar extends Component {
   state = { currentView: false, inputValue: "" };
@@ -19,10 +20,10 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className="flex-nav">
+      <nav className={styles["flex-nav"]}>
         <ul>
           <li>
-            <a href="#">Nano Vendors</a>
+            <a>Nano Vendors</a>
           </li>
           <li>
             <input
@@ -31,7 +32,7 @@ class NavBar extends Component {
               placeholder="Search Vendors"
             />
           </li>
-          <li className="social">
+          <li className={styles["social"]}>
             <a href="#" onClick={this.renderIcon}>
               {this.state.currentView ? (
                 <i className="fa fa-th-list" />

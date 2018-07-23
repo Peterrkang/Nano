@@ -4,7 +4,7 @@ import NavBar from "./navBar";
 import testAPI from "./testAPI";
 import Vendors from "./vendors";
 import SocialBar from "./socialBar";
-import "./styles.css";
+import styles from "./styles.module.css";
 
 class App extends Component {
   state = { vendors: [], searchResult: [], listView: false };
@@ -44,8 +44,8 @@ class App extends Component {
   render() {
     const { searchResult, listView } = this.state;
     return (
-      <div className="App">
-        <div className="wrapper">
+      <div className={styles.App}>
+        <div className={styles.wrapper}>
           <NavBar
             handleViewSwitch={this.handleViewSwitch}
             handleInputSearch={this.handleInputSearch}

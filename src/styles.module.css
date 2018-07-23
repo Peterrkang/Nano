@@ -67,11 +67,6 @@ body {
   display: flex;
 }
 
-.address:active {
-  -webkit-transition: 1s;
-  background: rgba(61, 54, 54, 0.1);
-}
-
 .flex-footer .social {
   flex: 1;
   align-self: center;
@@ -80,7 +75,6 @@ body {
 .flex-footer a {
   color: white;
   font-weight: 100;
-  letter-spacing: 2px;
   text-decoration: none;
   background: rgba(0, 0, 0, -1);
   padding: 20px 0px;
@@ -88,6 +82,7 @@ body {
   width: 100%;
   text-align: center;
   transition: all 0.5s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .flex-footer a:hover {
