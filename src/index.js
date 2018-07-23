@@ -44,7 +44,6 @@ class App extends Component {
   render() {
     const { searchResult, listView } = this.state;
     return (
-      <div className={styles.App}>
         <div className={styles.wrapper}>
           <NavBar
             handleViewSwitch={this.handleViewSwitch}
@@ -53,7 +52,6 @@ class App extends Component {
           <Vendors list={searchResult} listView={listView} />
           <SocialBar />
         </div>
-      </div>
     );
   }
 }
