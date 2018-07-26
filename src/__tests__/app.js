@@ -1,8 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import {render, cleanup} from 'react-testing-library'
 import App from '../app'
 
 test('mounts', () => {
-  const container = document.createElement('div')
-  ReactDOM.render(<App />, container)
+  const container = render(<App />)
 })
