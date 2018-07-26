@@ -4,8 +4,8 @@ import styles from "./styles.module.css";
 
 const Vendors = ({ list, listView }) => {
   return listView ? (
-    <ul className={styles["list-features"]}>
-      <li className={styles["vendor-props"]}>
+    <ul className={styles.listFeatures}>
+      <li className={styles.vendorsProps}>
         <div>Name</div>
         <div>Product</div>
         <div>Location</div>
@@ -23,12 +23,12 @@ const Vendors = ({ list, listView }) => {
       })}
     </ul>
   ) : (
-    <div className={styles["flex-content"]}>
+    <div className={styles.flexContent}>
       {list.map(vendor => {
         return (
-          <div key={vendor.id} className={styles["vendor"]}>
+          <div key={vendor.id} className={styles.vendor}>
             <h2>{vendor.name.toUpperCase()}</h2>
-            <ul className={styles["features"]}>
+            <ul className={styles.features}>
               <li>{vendor.product}</li>
               <li>{vendor.location}</li>
             </ul>

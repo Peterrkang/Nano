@@ -20,7 +20,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className={styles["flex-nav"]}>
+      <nav className={styles.flexNav}>
         <ul>
           <li>
             <a>Nano Vendors</a>
@@ -32,7 +32,7 @@ class NavBar extends Component {
               placeholder="Search Vendors"
             />
           </li>
-          <li className={styles["social"]}>
+          <li className={styles.social}>
             <a href="#" onClick={this.renderIcon}>
               {this.state.currentView ? (
                 <i className="fa fa-th-list" />
