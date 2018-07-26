@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+var S3Plugin = require('webpack-s3-plugin')
+
 
 module.exports = merge(common, {
   mode: 'production',

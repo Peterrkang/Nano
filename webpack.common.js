@@ -1,6 +1,5 @@
 require('dotenv').config()
 const path = require('path')
-var S3Plugin = require('webpack-s3-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
