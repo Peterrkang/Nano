@@ -1,7 +1,11 @@
 module.exports = {
+	setupFiles: [
+		'<rootDir>/tests/shim.js',
+		'<rootDir>/tests/setup.js'
+	],
 	moduleNameMapper: {
 		'\\.module\\.css$': 'identity-obj-proxy',
-		'\\.css$': require.resolve('./test/style-mock'),
+		'\\.css$': require.resolve('./tests/style-mock'),
 	},
 	collectCoverageFrom: ['**/src/**/*.js'],
 	coverageThreshold: {
