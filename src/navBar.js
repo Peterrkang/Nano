@@ -35,9 +35,9 @@ class NavBar extends Component {
           <li className={styles.social}>
             <a href="#" onClick={this.renderIcon}>
               {this.state.currentView ? (
-                <i className="fa fa-th-list" />
-              ) : (
                 <i className="fa fa-th" />
+              ) : (
+                <i className="fa fa-th-list" />
               )}
             </a>
           </li>
