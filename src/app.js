@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "./navBar";
-import testAPI from "./testAPI";
+import vendorJSON from "./vendorJSON";
 import Vendors from "./vendors";
 import SocialBar from "./socialBar";
 import styles from "./styles.module.css";
@@ -9,7 +9,7 @@ class App extends Component {
   state = { vendors: [], searchResult: [], listView: false };
 
   componentWillMount() {
-    this.setState({ vendors: testAPI, searchResult: testAPI });
+    this.setState({ vendors: vendorJSON, searchResult: vendorJSON });
   }
 
   handleViewSwitch = () => {
@@ -43,14 +43,14 @@ class App extends Component {
   render() {
     const { searchResult, listView } = this.state;
     return (
-        <div className={styles.wrapper}>
-          <NavBar
-            handleViewSwitch={this.handleViewSwitch}
-            handleInputSearch={this.handleInputSearch}
-          />
-          <Vendors list={searchResult} listView={listView} />
-          <SocialBar />
-        </div>
+      <div className={styles.wrapper}>
+        <NavBar
+          handleViewSwitch={this.handleViewSwitch}
+          handleInputSearch={this.handleInputSearch}
+        />
+        <Vendors list={searchResult} listView={listView} />
+        <SocialBar />
+      </div>
     );
   }
 }
