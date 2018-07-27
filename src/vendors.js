@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-
 const Vendors = ({ list, listView }) => {
   return listView ? (
     <ul className={styles.listFeatures}>
@@ -14,10 +13,10 @@ const Vendors = ({ list, listView }) => {
       {list.map(vendor => {
         return (
           <li key={vendor.id}>
-            <div>{vendor.name}</div>
+            <div className={styles.vendorName}>{vendor.name}</div>
             <div>{vendor.product}</div>
             <div>{vendor.location}</div>
-            <a href={vendor.url}>Visit {vendor.name}</a>
+            <a href={vendor.url}>Visit Site</a>
           </li>
         );
       })}
@@ -32,7 +31,7 @@ const Vendors = ({ list, listView }) => {
               <li>{vendor.product}</li>
               <li>{vendor.location}</li>
             </ul>
-            <a href={vendor.url}>Visit {vendor.name}</a>
+            <a href={vendor.url}>Visit Site</a>
           </div>
         );
       })}
