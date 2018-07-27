@@ -23,7 +23,7 @@ class NavBar extends Component {
       <nav className={styles.flexNav}>
         <ul>
           <li>
-            <a>Nano Vendors</a>
+            <a>Nano Pages</a>
           </li>
           <li>
             <input
