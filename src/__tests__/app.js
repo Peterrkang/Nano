@@ -1,6 +1,10 @@
 import React from "react";
-import App from '../app'
+import App from "../app";
+import { shallow, mount } from "enzyme";
 
-test('mounts', () => {
-  const container = render(<App />)
-})
+describe("<App />", () => {
+  it("render app", () => {
+    const navBar = shallow(<App />);
+    expect(navBar).toHaveLength(1);
+  });
+});
