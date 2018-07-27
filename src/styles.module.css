@@ -167,6 +167,7 @@ body {
   display: flex;
   align-items: center;
   height: 50px;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 }
 
 .list-features li:hover {
@@ -178,13 +179,15 @@ body {
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 600px) {
+
   .body {
-    display: inline-block;
     overflow: hidden;
+    zoom: 0;
   }
 
   .wrapper {
+    display: inline-block;
     padding: 0;
   }
 }
