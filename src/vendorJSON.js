@@ -296,7 +296,7 @@ const vendorJSON = [
   },
   {
     id: 43,
-    name: "NanoMerch",
+    name: "Nano Merch",
     location: "US",
     product: "NANO Merchandise",
     url: "http://nanomerch.net"
@@ -709,6 +709,195 @@ const vendorJSON = [
     location: "UK",
     product: "Apparel",
     url: "https://cryptoapparelcompany.co.uk"
+  },
+  {
+    id: 102,
+    name: "BlockFevr",
+    location: "Worldwide",
+    product: "Gambling",
+    url: "https://blockfevr.com/game/dice/XRB"
+  },
+  {
+    id: 103,
+    name: "LaciCloud",
+    location: "Worldwide",
+    product: "Cloud Storage and Web Hosting",
+    url: "https://lacicloud.net/"
+  },
+  {
+    id: 104,
+    name: "Eternity Tower",
+    location: "Worldwide",
+    product: "Web Game",
+    url: "https://eternitytower.net/"
+  },
+  {
+    id: 105,
+    name: "CryptoCatDad",
+    location: "Worldwide",
+    product: "Cat Toy",
+    url: "https://www.etsy.com/no-en/shop/CryptoCatDad"
+  },
+  {
+    id: 106,
+    name: "Cohomology Labs",
+    location: "Worldwide",
+    product: "DApp Development",
+    url: "http://cohomologylabs.tech/"
+  },
+  {
+    id: 107,
+    name: "Rob and Lizzie",
+    location: "Worldwide",
+    product: "Wedding Photography",
+    url: "https://www.robandlizzie.com/"
+  },
+  {
+    id: 108,
+    name: "LinguaLift",
+    location: "Worldwide",
+    product: "Language Courses",
+    url: "http://lingualift.com/"
+  },
+  {
+    id: 109,
+    name: "Ymir",
+    location: "Worldwide",
+    product: "Multiplayer Game",
+    url: "https://ymir-online.com/"
+  },
+  {
+    id: 110,
+    name: "Scott Mills Art",
+    location: "Worldwide",
+    product: "Art",
+    url: "http://scottmillsart.com/contact/"
+  },
+  {
+    id: 111,
+    name: "Crypto Designs",
+    location: "Worldwide",
+    product: "Cryptocurrency Artwork",
+    url: "https://cryptodesigns.io"
+  },
+  {
+    id: 112,
+    name: "Servebyte Ltd",
+    location: "Worldwide",
+    product: "Web Hosting and Servers",
+    url: "https://servebyte.com"
+  },
+  {
+    id: 113,
+    name: "Credit Glory",
+    location: "USA",
+    product: "Credit Repair",
+    url: "https://creditglory.com"
+  },
+  {
+    id: 114,
+    name: "Naviforce Watch Store",
+    location: "Worldwide",
+    product: "Men's Watches",
+    url: "https://naviforcewatch.store/"
+  },
+  {
+    id: 115,
+    name: "KeeperRL",
+    location: "Worldwide",
+    product: "PC Game",
+    url: "http://keeperrl.com"
+  },
+  {
+    id: 116,
+    name: "BitLit",
+    location: "Worldwide",
+    product: "Marketplace",
+    url: "https://bitlit.io"
+  },
+  {
+    id: 117,
+    name: "FixTri - Adesivos",
+    location: "Brazil",
+    product: "Bicycle Stickers",
+    url: "https://www.fixtri.com.br/"
+  },
+  {
+    id: 118,
+    name: "XRB Nodes",
+    location: "Worldwide",
+    product: "RaiBlocks Node Setup",
+    url: "http://xrbnodes.com/"
+  },
+  {
+    id: 119,
+    name: "Dreamlandmagic",
+    location: "Worldwide",
+    product: "Magic Shop",
+    url: "https://www.dreamlandmagic.com"
+  },
+  {
+    id: 120,
+    name: "Kayla Lauren",
+    location: "Worldwide",
+    product: "Graphic Designer",
+    url: "http://creativedesignlab.co/kayla/"
+  },
+  {
+    id: 121,
+    name: "The Copper Hat",
+    location: "Worldwide",
+    product: "Traditional Shaving and Beard Supplies",
+    url: "https://thecopperhat.ca/"
+  },
+  {
+    id: 122,
+    name: "Department of Art-Cryptomancy",
+    location: "Worldwide",
+    product: "Cryptocurrency Artwork",
+    url: "http://www.doac.us"
+  },
+  {
+    id: 123,
+    name: "BlockVerse",
+    location: "Worldwide",
+    product: "Marketplace",
+    url: "https://blockverse.io"
+  },
+  {
+    id: 124,
+    name: "Snorre Laces",
+    location: "Germany",
+    product: "Shoelaces",
+    url: "https://www.snorre-laces.com/"
+  },
+  {
+    id: 125,
+    name: "JacksTaxBack",
+    location: "Canada",
+    product: "Tax Returns",
+    url: "http://jackstaxback.com"
+  },
+  {
+    id: 126,
+    name: "Franchise Boutique",
+    location: "USA",
+    product: "FDD Documents",
+    url: "http://franchise.boutique"
+  },
+  {
+    id: 127,
+    name: "TimeBook",
+    location: "Worldwide",
+    product: "Fun Planners for a Great Life",
+    url: "https://timebook.life"
+  },
+  {
+    id: 128,
+    name: "Yoni",
+    location: "Worldwide",
+    product: "Rawtoothbrush",
+    url: "https://yonilife.com/shop/"
   }
 ];
 
