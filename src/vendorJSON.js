@@ -38,7 +38,7 @@ const vendorJSON = [
     id: 6,
     name: "Smallsound / Bigsound",
     location: "US",
-    product: "guitar pedals",
+    product: "Guitar Pedals",
     url: "http://www.smallsoundbigsound.com/pay-with-cryptocurrency"
   },
   {
